@@ -4,10 +4,6 @@ import { useState, ChangeEvent } from "react";
 export default function Home() {
     const [userName, setUserName] = useState<string>("");
 
-    const fromOrder: string = "option";
-
-    fromOrder = "foo";
-
     const handleUserNameChange = (e: ChangeEvent<HTMLInputElement>) => {
         setUserName(e.target.value);
     };
